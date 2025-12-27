@@ -69,4 +69,93 @@ This project addresses the problem by providing a **single intelligent assistant
 ---
 
 ## 📂 Project Structure
+Public-Assistance-Chatbot-for-Government-Schemes/
+│
+├── app.py # Flask application entry point
+├── scraper/ # Government website scraping scripts
+├── embeddings/ # Text embedding & vector logic
+├── database/ # MongoDB & ChromaDB handlers
+├── models/ # LLM & NLP integration
+├── utils/ # Helper utilities
+├── templates/ # HTML templates
+├── static/ # CSS / JS assets
+├── requirements.txt
+└── README.md
 
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/leelaprasad6/Public-Assistance-Chatbot-for-Government-Schemes.git
+cd Public-Assistance-Chatbot-for-Government-Schemes
+
+2️⃣ Create Virtual Environment
+python -m venv venv
+venv\Scripts\activate    # Windows
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Configure Environment Variables
+
+Create a .env file:
+
+OPENAI_API_KEY=your_openai_api_key
+MONGODB_URI=your_mongodb_connection_string
+GOOGLE_APPLICATION_CREDENTIALS=path_to_gcp_credentials.json
+
+5️⃣ Run the Application
+python app.py
+
+🧪 Sample Queries
+
+“Schemes for farmers with low income”
+
+“Scholarships for engineering students in India”
+
+“Government benefits for disabled persons”
+
+“Housing schemes for SC/ST families”
+
+📊 Evaluation & Reliability
+
+Cosine similarity thresholding for semantic accuracy
+
+Manual evaluation using test queries
+
+Eligibility-rule validation
+
+Grounded LLM responses using retrieved documents
+
+Fallback logic for missing data
+
+⚠️ Limitations
+
+Depends on the accuracy and freshness of scraped data
+
+Internet connectivity required for LLM APIs
+
+State-specific scheme variations may exist
+
+OCR accuracy depends on document quality
+
+🔮 Future Enhancements
+
+Automated periodic data updates
+
+User authentication & profile history
+
+Voice-based interaction
+
+Mobile application support
+
+Analytics dashboard for scheme usage
+
+👨‍💻 Author
+
+Leela Prasad
+B.Tech – Computer Science & Engineering
+AI | NLP | Full-Stack Development
